@@ -5,10 +5,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: 'https://frontend-nrygc84lh-karman07s-projects.vercel.app',
-    methods: 'GET,POST,PUT,DELETE,OPTIONS', // Make sure OPTIONS is included
-    allowedHeaders: 'Content-Type, Authorization',
-    credentials: true,
+    origin: '*'
   });
   
   await app.listen(3000);
