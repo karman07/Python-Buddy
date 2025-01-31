@@ -22,7 +22,7 @@ export default function Chat({ apiKey, character }) {
       setMessages((prev) => [...prev, userMsg]);
 
       const response = await axios.post(
-        "http://localhost:3000/ai/chat",
+       "https://python-buddy.onrender.com/ai/chat",
         { message: input },
         { headers: { "x-api-key": apiKey } }
       );
