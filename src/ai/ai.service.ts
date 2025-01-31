@@ -21,4 +21,9 @@ export class AiService {
     });
     return response.data.choices[0].message.content;
   }
+
+  getHello(): string {
+    return 'Hello World!';
+  }
+  
 }

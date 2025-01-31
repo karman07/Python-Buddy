@@ -1,4 +1,4 @@
-import { Body, Controller, Post, Headers } from '@nestjs/common';
+import { Body, Controller, Post, Headers, Get } from '@nestjs/common';
 import { AiService } from './ai.service';
 
 @Controller('ai')
@@ -12,4 +12,9 @@ export class AiController {
   ) {
     return this.aiService.chat(body.message, apiKey);
   }
+
+   @Get()
+   getHello(): string {
+     return this.aiService.getHello();
+   }
 }
