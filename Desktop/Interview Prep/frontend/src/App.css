@@ -1,0 +1,26 @@
+/* Apply global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Set background color */
+body {
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make it full height */
+}
+
+/* Center the chat container */
+.chat-container {
+  width: 100%;
+  max-width: 500px; /* Adjust width as needed */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
