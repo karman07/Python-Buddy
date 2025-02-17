@@ -1,0 +1,75 @@
+/* General Carousel Styles */
+.custom-carousel {
+  width: 100%;
+  max-height: 500px;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px;
+  height: 500px;
+  color: white;
+}
+
+/* Slide 1 - Blue Gradient */
+.slide1 {
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* Blue to Light Blue */
+}
+
+/* Slide 2 - Green Gradient */
+.slide2 {
+  background: linear-gradient(to right, #00c853, #b2ff59); /* Dark Green to Lime Green */
+}
+
+/* Slide 3 - Orange/Yellow Gradient */
+.slide3 {
+  background: linear-gradient(to right, #ff9800, #ffeb3b); /* Deep Orange to Bright Yellow */
+}
+
+/* Text Content */
+.carousel-text {
+  max-width: 50%;
+}
+
+.carousel-text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Shop Now Button */
+.shop-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.shop-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Badge (Small Tag Above Text) */
+.badge {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Image Styling */
+.carousel-image img {
+  max-width: 400px;
+  max-height: 450px;
+  border-radius: 20px;
+}

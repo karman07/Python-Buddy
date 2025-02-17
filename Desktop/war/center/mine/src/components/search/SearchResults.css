@@ -1,0 +1,42 @@
+.search-results-container {
+  position: absolute;
+  top: calc(100% + 15px); /* Slightly below navbar */
+  left: 0;
+  width: 96%;
+  z-index: 9999;
+  background: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.results-list {
+  width: 100%;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background 0.2s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.search-item:hover {
+  background: #f9f9f9;
+}
+
+.search-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.search-item .price {
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+}

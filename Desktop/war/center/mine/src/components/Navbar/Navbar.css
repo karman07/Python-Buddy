@@ -1,0 +1,52 @@
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .cart-icon {
+    position: relative;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .dropdown-wide {
+    width: 600px;
+    padding: 20px;
+  }
+  
+  .categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .category-column {
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .category-item {
+    margin-top: 5px;
+  }
+
+  .cart-container{
+    margin-top: 12px;
+  }
+  

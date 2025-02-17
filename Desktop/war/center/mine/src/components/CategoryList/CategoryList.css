@@ -1,0 +1,46 @@
+.category-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+  }
+  
+  .category-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #e6ffe6;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .category-item:hover {
+    background: #c3f7c3;
+  }
+  
+  .category-icon {
+    font-size: 18px;
+    color: #2e7d32;
+  }
+  
+  .category-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .category-container::-webkit-scrollbar {
+    height: 5px;
+  }
+  
+  .category-container::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,86 @@
+.cards-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .products-count {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .shop-now {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .shop-now:hover {
+    text-decoration: underline;
+  }
+  
+  .card-image {
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+  
+  .card-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* 📱 Mobile View - Show One Card at a Time */
+  @media (max-width: 768px) {
+    .cards-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 0;
+      padding: 10px;
+    }
+  
+    .card {
+      flex: 0 0 90%;
+      margin: auto;
+      scroll-snap-align: center;
+    }
+  }
+  
